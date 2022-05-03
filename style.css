@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 450px;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid chartreuse;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    overflow-y: auto;
+}
+
+.duvida-container{
+    position: absolute;
+    inset: 0;
+    padding: 10px;
+    padding-bottom: 0;
+    height: 0;
+}
+
+.duvida-imgs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.duvida-imgs button{
+    background-color: #444;
+    color: white;
+    font-size: .92em;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+
+.duvida-imgs img{
+    background-color: #444;
+    border-radius: 25%;
+    margin-right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.duvida-text{
+    height: 0;
+    overflow: hidden;
+}
+
+.active{
+    background-color: black;
+    height: auto;
+}
+.active .duvida-imgs button{visibility: visible;}
+.active .duvida-imgs img{visibility: hidden;}
+.active .duvida-text{height: auto;}
+
+
+
+.container h1{
+    color: white;
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.container-add-tarefas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#input-tarefa{
+    background-color: #444;
+    color: white;
+    font-size: .92em;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-right: 10px;
+    padding: 8px 0 8px 15px;
+}
+
+#button-tarefa{
+    background-color: #444;
+    color: white;
+    font-size: .92em;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.tarefas{
+    border-top: 2px solid chartreuse;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #444;
+    color: white;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 8px 0 8px 15px;
+    border-radius: 3px;
+}
+
+
+
+#task{
+    display: flex;
+    align-items: center;
+}
+
+#task input[type=checkbox]{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#task textarea{
+    width: 340px;
+    padding: 5px 5px 5px 10px;
+    font-size: 1em;
+    font-family: serif;
+    color: white;
+    background-color: #444;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.task img{
+    align-items: flex-end;
+    width: 30px;
+    margin: 0 10px;
+    transform: rotate(45deg);
+    cursor: pointer;}
+
+
+
+
+
+
+
